@@ -175,8 +175,11 @@
     display: block; 
     height: auto; 
     animation: Slides 1s ease 0s 1 normal forwards;
+    overflow-x: hidden;
 }
-
+.slideshow{
+  overflow-x: hidden;
+}
 
 
   @media (max-width: 1500px){
@@ -286,7 +289,7 @@
     }
     
     .nav > .nav-links a:hover { 
-        background-color: rgba(255, 0, 0, 0.3);
+        background-color: rgba(204, 204, 204, 0.3);
     }
 
     .nav-links a:hover:after {
