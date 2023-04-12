@@ -2,6 +2,20 @@
     box-sizing: border-box;
   }
 
+  @keyframes LogoAnim {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+
     .header-social{
       padding-top:3px;
       margin-left: 1em;
@@ -10,10 +24,10 @@
     display:inline;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:#fcbe0e;
-    font-size:20px;
-    margin-left: 10px;
+    font-size:22px;
+    margin-left: 50px;
     position: relative;
-    bottom:3px;
+    bottom:4px;
   }
 
   .header-social a img{
@@ -24,6 +38,9 @@
   .image-title, #logo{
     display:inline-block; 
     width: 10em;
+  }
+  #logo:hover{
+    animation: LogoAnim 1s ease 0s 1 normal forwards;
   }
   .nav-title{
     display:none;
@@ -126,7 +143,12 @@
   }
   
   
-
+  #phone-slide{
+    display:none;
+  }
+  #pc-slide{
+    display:block;
+  }
   
   .nav > #nav-check {
     display: none;
@@ -147,7 +169,7 @@
 	}
 }
 
-.slideshow-images{
+.slideshow-images, .slideshow-images-phone{
     width: auto;
     max-width: 100%; 
     display: block; 
@@ -167,9 +189,18 @@
     .hours, .divider{
         display:none;
     }
+    #phone-number{
+      display: none;
+    }
   }
 
   @media (min-width:1010px) {
+    #phone-slide{
+      display:none;
+    }
+    #pc-slide{
+      display:block;
+    }
     .nav{
         height: 80px;
     }
@@ -183,6 +214,13 @@
       }
   }
   @media (max-width:1010px) {
+
+    #phone-slide{
+      display:block;
+    }
+    #pc-slide{
+      display:none;
+    }
 
     .header{
         display:block;

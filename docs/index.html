@@ -13,6 +13,8 @@
           <a href="https://instagram.com"><img src="/data/media/instagram.png"></a>
           <!--<a href="https://facebook.com"><img src="data/media/facebook.png"></a> -->
           <a href="tel:8177750350"><img src="/data/media/phone.png"></a>
+          
+          <a href="tel:8177750350"><p id="phone-number">(817) 755-0350</p></a>
           <p>Shockingly Great Service!</p>
           </div>
     </div>
@@ -24,7 +26,7 @@
         </div>
 
         <div class="image-title">
-          <img id="logo" src="/docs/BELogoTransparent.png">
+          <a href="index.html"><img id="logo" src="/docs/BELogoTransparent.png"></a>
         </div>
       </div>
       <div class="nav-btn">
@@ -52,19 +54,31 @@
       
     </div>
     
-    <div class="slideshow">
+    <div class="slideshow" id="pc-slide" media="(min-width: 1050px)">
       <img class="slideshow-images" src="/data/Images/OtherPhoto.jpg"> 
       <img class="slideshow-images" src="/data/Images/lightbulb.jpg">
       <img class="slideshow-images" src="/data/Images/electric_pattern.jpg">
     </div>
 
+    <div class="slideshow" id="phone-slide"media="(max-width: 1050px)">
+      <img class="slideshow-images-phone" src="/data/Images/phone-OtherPhoto.png"> 
+      <img class="slideshow-images-phone" src="/data/Images/phone-lightbulb.png">
+      <img class="slideshow-images-phone" src="/data/Images/phone-electric_pattern.png">
+    </div>
+
     <script>
 			var slideIndex = 0;
-			carousel();
+
+			var wid = window.matchMedia("(max-width: 1050px)")
+      
+      carousel();
 
 			function carousel() {
 				var i;
-				var x = document.getElementsByClassName("slideshow-images");
+        if(wid.matches)
+				  var x = document.getElementsByClassName("slideshow-images-phone");
+        else  
+          var x = document.getElementsByClassName("slideshow-images");
 				for (i = 0; i < x.length; i++) {
 					x[i].style.display = "none";  
 				}
