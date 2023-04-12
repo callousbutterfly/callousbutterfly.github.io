@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
+    
   }
+  
 
   @keyframes LogoAnim {
     0% {
@@ -76,6 +78,7 @@
   body {
     margin: 0px;
     font-family: 'segoe ui';
+    overflow-x:hidden;
   }
   
   .nav {
@@ -220,6 +223,9 @@
 
     #phone-slide{
       display:block;
+      width: 150%;
+      max-width: 150%;
+      overflow-x:inherit;
     }
     #pc-slide{
       display:none;
