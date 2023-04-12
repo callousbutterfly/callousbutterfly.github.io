@@ -79,6 +79,7 @@
     margin: 0px;
     font-family: 'segoe ui';
     overflow-x:hidden;
+    background-color: #eeeeee;
   }
   
   .nav {
@@ -125,6 +126,21 @@
     position:relative;
     margin-left: 1.7rem;
     
+  }
+
+  .all-checks{
+    display: inline-flex;
+    width:100%;
+    align-items: center;
+  justify-content: center;
+  }
+
+
+
+  .checkmark{
+    margin-left:28%;
+    width:40%;
+    margin-top: 10%;
   }
 
   .nav-links a:after {
@@ -230,6 +246,8 @@
     #pc-slide{
       display:none;
     }
+
+
 
     .header-social p{
       margin-left: 20px;
