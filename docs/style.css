@@ -231,6 +231,10 @@
       display:none;
     }
 
+    .header-social p{
+      margin-left: 30px;
+    }
+
     .header{
         display:block;
     }
