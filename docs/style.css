@@ -2,8 +2,8 @@
     box-sizing: border-box;
   }
 
-
     .header-social{
+      padding-top:3px;
       margin-left: 1em;
     }
   .header-social p{
