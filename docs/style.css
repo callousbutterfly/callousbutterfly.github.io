@@ -232,7 +232,7 @@
     }
 
     .header-social p{
-      margin-left: 30px;
+      margin-left: 20px;
     }
 
     .header{
@@ -267,7 +267,7 @@
       display: block;
       width: 25px;
       height: 10px;
-      border-top: 2px solid #eee;
+      border-top: 2px solid #272727;
     }
     .nav > .nav-links {
       position: absolute;
