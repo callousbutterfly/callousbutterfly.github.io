@@ -69,12 +69,13 @@
     <script>
 			var slideIndex = 0;
 
-			var wid = window.matchMedia("(max-width: 1050px)")
       
       carousel();
 
 			function carousel() {
+        var wid = window.matchMedia("(max-width: 1050px)")
 				var i;
+        var x;
         if(wid.matches)
 				  var x = document.getElementsByClassName("slideshow-images-phone");
         else  
