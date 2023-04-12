@@ -227,6 +227,7 @@
       transition: all 0.3s ease-in;
       overflow-y: hidden;
       top: 65px;
+      z-index: 5;
       
     }
     .nav > .nav-links a{
@@ -236,7 +237,7 @@
       font-weight: 550;
       color: #efefef;
       font-size:1.1rem;
-      margin-left: -1rem;
+      margin-left: 1rem;
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
