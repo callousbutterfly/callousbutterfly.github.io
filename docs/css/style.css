@@ -237,11 +237,15 @@
   }
   @media (max-width:1010px) {
 
+*{
+  overflow-x: hidden
+}
+
     #phone-slide{
       display:block;
       width: 150%;
       max-width: 150%;
-      overflow-x:inherit;
+      overflow-x:hidden;
     }
     #pc-slide{
       display:none;
@@ -250,7 +254,7 @@
 
 
     .header-social p{
-      margin-left: 20px;
+      margin-left: 10px;
     }
 
     .header{
