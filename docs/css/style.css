@@ -237,9 +237,7 @@
   }
   @media (max-width:1010px) {
 
-*{
-  overflow-x: hidden
-}
+
 
     #phone-slide{
       display:block;
