@@ -99,6 +99,7 @@
     font-size: 22px;
     color: #fff;
     padding: 10px 10px 10px 10px;
+    padding-right: 0px;
   }
   
   .nav > .nav-btn {
@@ -109,7 +110,7 @@
     display:inline-table;
     float: unset;
     font-size: 18px;
-    padding-left: 10%;
+    padding-left: 5%;
     position:relative;
     bottom:29px;
   }
